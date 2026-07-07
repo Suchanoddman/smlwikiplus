@@ -27,9 +27,9 @@ body { margin: 0; overflow: hidden; cursor: none; background-color: black; } #cu
 </style>  <div id="cursor" style="transition: none 0s ease 0s;"></div> <div id="backgroundContainer"></div> <div id="header-container"></div>
 <div id="imageContainer"> <img id="charleyyyImage" src="images/charleyyy.png" alt="Charleyyy head" width="310"> </div>
 <button id="anchor">Click me!</button> <div id="rainbowText">^^^ Click here to meet Charleyyy! ^^^</div>
-<link rel="preload" href="https://mystufflist.github.io/cast/charleyyy.png" as="image">
-<link rel="preload" href="https://mystufflist.github.io/cast/charleyyy2.png" as="image">
-<link rel="preload" href="https://mystufflist.github.io/cast/charleyyy3.png" as="image">
+<link rel="preload" href="https://suchanoddman.github.io/smlwikiplus/cast/charleyyy.png" as="image">
+<link rel="preload" href="https://suchanoddman.github.io/smlwikiplus/cast/charleyyy2.png" as="image">
+<link rel="preload" href="https://suchanoddman.github.io/smlwikiplus/cast/charleyyy3.png" as="image">
 <script>
 const noise = new Audio('https://nez.fyi/sml-assets/jscare02.mp3');
 const piano = new Audio('https://nez.fyi/sml-assets/Blues_Bar_Piano_02.ogg');
@@ -49,11 +49,11 @@ const distance = Math.sqrt( Math.pow(cursorRect.x + cursorRect.width / 2 - (anch
   if (distance < 350) { following = true; setTimeout(() => { scene2(); cursor.style.display = 'none'; acre(); }, 200);
 } else { following = true; cursor.style.transition = 'none'; } }, 100);
 cursor.addEventListener('transitionend', () => {setTimeout(() => {  cursor.style.display = 'none'; }, 20); });
-  function scene2() { let alternate = false; piano.pause(); piano.loop = false; charleyyy.pause(); setTimeout(() => { window.location.href = 'https://mystufflist.github.io'; }, 2356); }
+  function scene2() { let alternate = false; piano.pause(); piano.loop = false; charleyyy.pause(); setTimeout(() => { window.location.href = 'https://suchanoddman.github.io/smlwikiplus'; }, 2356); }
 </script>  
 <footer><img id="logan30acre" src="images/we.jpeg"><style>#logan30acre{position: absolute; left:0; top:-128px; z-index: 100;width: 100%; animation: loganstank 3600ms linear; display: none;}@keyframes loganstank { 0% { top: -128px; opacity: 0; } 10% { top: -139px; opacity: 1; } 100% { top: -300px; opacity: 1; } }</style><script>const dirtyacre = new Audio('https://nez.fyi/sml-assets/30acre12.ogg'); function acre() { const image = document.getElementById('logan30acre'); image.style.display = 'block'; dirtyacre.play(); document.body.style.overflow = 'hidden'; document.body.style.margin = '0'; document.body.style.pointerEvents = 'none'; } </script></footer>
 
-<script> fetch('https://mystufflist.github.io/global/header.html') .then(response => response.text()) .then(html => { html += '<style>body { cursor: none !important; }</style>';
+<script> fetch('https://suchanoddman.github.io/smlwikiplus/global/header.html') .then(response => response.text()) .then(html => { html += '<style>body { cursor: none !important; }</style>';
   document.getElementById('header-container').innerHTML = html;  })  .catch(error => console.error('error fetching header:', error));
 </script>
 </body></html>
